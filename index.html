@@ -1,23 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>form validation</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form validation</title>
 
-  <!-- -------------daisyUI------------- -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- -------------daisyUI------------- -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main
+      class="max-w-[500px] flex justify-center items-center mx-auto h-screen"
+    >
+      <section class="bg-gray-800 p-6 rounded-3xl">
+        <div class=" text-left">
+          <h1 class="font-semibold text-[35px] text-white">Create a account</h1>
+          <p class="font-[400px] text-[16px] text-white mt-2">
+            All ready have your account?
+            <a href="" id="login_Option" class="text-blue-600 underline"
+              >Log in</a
+            >
+          </p>
 
+          <form
+            action=""
+            class="max-w-md mx-auto rounded-2xl shadow-md space-y-4 mt-10"
+          >
+            <div class="flex gap-4">
+              <input
+                type="text"
+                placeholder="First Name"
+                class="text-white w-1/2 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300"
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                class="text-white w-1/2 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300"
+              />
+            </div>
 
-</head>
-<body>
+           
+            <div class="password-box flex items-center  relative" >
+               <input
+              type="email"
+              placeholder="Enter Your Email"
+              class="text-white w-full p-2  rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300 "
+            />
+              <span id="togglePassword" class="toggle-icon absolute right-1">👁</span>
+            </div>
 
- <main >
+            <div class="flex items-center gap-2">
+              <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                class="w-4 h-4 text-green-600 border-gray-300 rounded focus:ring-gray-300"
+              />
+              <label for="terms" class="text-gray-300">
+                I agree to terms and conditions
+              </label>
+            </div>
 
+            <button
+              type="submit"
+              class="w-full bg-purple-500 text-white p-2 rounded-lg  transition"
+            >
+              Create account
+            </button>
+          </form>
 
- </main>
+          <div
+            class="max-w-md mx-auto my-8  bg-gray-800 text-white rounded-xl"
+          >
+            <!-- Divider -->
+            <div class="flex items-center gap-4 mb-4">
+              <div class="flex-grow border-t border-gray-500"></div>
+              <span class="text-white font-semibold">Or register with</span>
+              <div class="flex-grow border-t border-gray-500"></div>
+            </div>
 
-  
-</body>
+            <!-- Social buttons -->
+            <div class="flex gap-4">
+              <button
+                class="flex-1 flex items-center justify-center gap-2 border border-gray-500 rounded-lg p-2 hover:bg-purple-500 transition"
+              >
+                <img src="google-logo.png" alt="Google" class="w-5 h-5" />
+                Google
+              </button>
+              <button
+                class="flex-1 flex items-center justify-center gap-2 border border-gray-500 rounded-lg p-2 hover:bg-purple-500 transition"
+              >
+                <img src="apple-logo.png" alt="Apple" class="w-5 h-5" />
+                Apple
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
